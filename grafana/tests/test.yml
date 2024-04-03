@@ -1,0 +1,11 @@
+---
+- name: Tests Grafana role
+  hosts: asbserver
+  become: yes
+  roles:
+    - /home/ubuntu/grafana
+
+#- hosts: asbserver
+#  remote_user: root
+#  roles:
+#    - grafana
