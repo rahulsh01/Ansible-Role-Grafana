@@ -1,8 +1,8 @@
 // Defined a method to deploy Grafana using Ansible
 def call(Map configMap) {
     // Ensure required parameters are provided
-    def ansiblePlaybook = configMap.playbook ?: '/home/ubuntu/Ansible-Role-Grafana/grafana/tests/test.yml'
-    def inventory = configMap.inventory ?: '/home/ubuntu/Ansible-Role-Grafana/grafana/tests/inventory'
+    def ansiblePlaybook = configMap.playbook ?: '/var/lib/jenkins/workspace/Assignment6@libs/6782d7c5b1d4a18e916269bd48b3ba4ad093e46270fc0a85cd254410c77147dc/grafana/tests/test.yml'
+    def inventory = configMap.inventory ?: '/var/lib/jenkins/workspace/Assignment6@libs/6782d7c5b1d4a18e916269bd48b3ba4ad093e46270fc0a85cd254410c77147dc/grafana/tests/inventory'
     def extraVars = configMap.extraVars ?: [:]
 
     // Validate playbook and inventory file paths
