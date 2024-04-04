@@ -6,6 +6,8 @@
     name: prometheus
     state: present
     update_cache: yes
+    become: true
+
 #  when: ansible_os_family == 'Debian'
 
 #- name: Install Prometheus on Red Hat
