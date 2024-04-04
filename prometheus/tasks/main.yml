@@ -6,14 +6,14 @@
     name: prometheus
     state: present
     update_cache: yes
-  when: ansible_os_family == 'Debian'
+#  when: ansible_os_family == 'Debian'
 
-- name: Install Prometheus on Red Hat
-  yum:
-    name: prometheus
-    state: present
-    update_cache: yes
-  when: ansible_os_family == 'RedHat'
+#- name: Install Prometheus on Red Hat
+#  yum:
+#    name: prometheus
+#    state: present
+#    update_cache: yes
+#  when: ansible_os_family == 'RedHat'
 
 - name: Configure Prometheus
   template:
