@@ -3,7 +3,7 @@
   hosts: asbserver
   become: yes
   roles:
-    - /home/ubuntu/grafana
+    - grafana
 
 #- hosts: asbserver
 #  remote_user: root
