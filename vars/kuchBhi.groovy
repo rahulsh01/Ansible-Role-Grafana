@@ -1,4 +1,4 @@
 def call(){
-  sh 'ansible-playbook -i /var/lib/jenkins/workspace/Assignment6@libs/6782d7c5b1d4a18e916269bd48b3ba4ad093e46270fc0a85cd254410c77147dc/grafana/tests/inventory /var/lib/jenkins/workspace/Assignment6@libs/6782d7c5b1d4a18e916269bd48b3ba4ad093e46270fc0a85cd254410c77147dc/grafana/tests/test.yml'
+  sh 'ansible-playbook -i /var/lib/jenkins/workspace/Assignment6@libs/0c2aa2839050d5a8dbf078e8ff08499fa49b81f611e6444ce36530511a841fb1/grafana/tests/inventory /var/lib/jenkins/workspace/Assignment6@libs/0c2aa2839050d5a8dbf078e8ff08499fa49b81f611e6444ce36530511a841fb1/grafana/tests/test.yml'
 }
   
