@@ -1,0 +1,12 @@
+---
+- name: Tests Grafana role
+  hosts: asbserver
+  gather_facts: yes
+  become: true
+  roles:
+    - /var/lib/jenkins/workspace/Assignment6@libs/0c2aa2839050d5a8dbf078e8ff08499fa49b81f611e6444ce36530511a841fb1/grafana
+
+#- hosts: asbserver
+#  remote_user: root
+#  roles:
+#    - grafana
